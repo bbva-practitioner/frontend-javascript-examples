@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="Persona.js"></script>
     <script defer src="script.js"></script>
   </head>
 
@@ -54,13 +55,16 @@
         </div>
       </form>
       <div>Personas cargadas: <span id="form-input">[]</span></div>
-      <div>Cantidad de hombres: <span id="form-input">0</span></div>
-      <div>Cantidad de mujeres: <span id="form-input">0</span></div>
+      <div>Cantidad de hombres: <span id="form-input-male-count">0</span></div>
+      <div>
+        Cantidad de mujeres: <span id="form-input-female-count">0</span>
+      </div>
     </section>
 
     <section id="timer-section">
       <h1>Timer</h1>
-      Tiempo restante: <span>10</span> segundos <button>Comenzar timer</button>
+      Tiempo restante: <span id="timer-count">10</span> segundos
+      <button onclick="startTimer()">Comenzar timer</button>
     </section>
   </body>
 </html>
