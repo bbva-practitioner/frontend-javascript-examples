@@ -2,12 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
     <section id="button-section">
       <h1>Botón + prompt</h1>
-      <button>Hacer click aquí</button>
+      <button onclick="handlePromptButtonClick()">Hacer click aquí</button>
       <!-- Recibir input del usuario al hacer click en el botón, y escribirlo en el span -->
       El usuario escribió: <span id="button-input">(Esperando input)</span>
     </section>
@@ -22,7 +23,7 @@
         <!-- Agregar acá más cajas -->
         <div class="not-a-box">X</div>
       </div>
-      <button>Agregar otra caja</button>
+      <button onclick="handleAddBoxButtonClick()">Agregar otra caja</button>
     </section>
 
     <section id="form-section">
