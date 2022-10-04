@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 .boxes-container {
   display: flex;
   margin-bottom: 1rem;
@@ -5,6 +9,8 @@
 
 .box, .not-a-box {
   padding: 0.8rem 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .box {
